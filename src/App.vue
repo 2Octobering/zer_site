@@ -1,14 +1,18 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <keep-alive exclude='detail'>
+      <router-view />
+    </keep-alive>
   </div>
 </template>
+<script>
+export default {
+
+}
+</script>
 
 <style lang="less">
+@import url("./assets/css/reset.css");
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -1,0 +1,31 @@
+body,p,ul,ol,dl,dt,h1,h2,h3,h4,h5,h6,dl,dt,dd,span{
+	margin: 0;
+	padding: 0;
+}
+ul,ol{
+	list-style: none;
+}
+input{
+	border: none;
+	outline: none;
+}
+a{
+	text-decoration: none;
+}
+
+/* 清除浮动 */
+.clearfix::before,.clearfix::after{
+	content: "";
+	display: block;
+	height: 0;
+	line-height: 0;
+	clear: both;
+	visibility: hidden;
+}
+body{
+	margin:0 auto;
+}
+/* html, body { min-width: 1500px;}
+@media only screen and (min-width: 1500px) {
+    html, body { min-width: 1500px; }
+} */
